@@ -1,0 +1,99 @@
+
+
+<!--
+Matric Number: A179830
+Name: Mohamd Saiful Nizam Bin Abd Aziz
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extra Work</title>
+</head>
+<body>
+<h1>Biodata Form</h1>
+<hr>
+<form action="http://lrgs.ftsm.ukm.my/users/a123456/week3lab/validate_biodata.php" method="post" enctype="multipart/form-data">
+  <table border="1" cellpadding="10">
+
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" name="name" placeholder="Insert your name" pattern="[a-zA-Z\s]{1,}"autofocus required>  Format: Ali Bin Abu</td>
+    </tr>
+   
+    <tr>
+      <td>Age:</td>
+      <td><input type="number" name="age" min="0" max="100" step="1">  Format: 20 </td>
+    </tr>
+  
+    <tr>
+      <td>Sex:</td>
+      <td><label><input type="radio" name="sex" value="male" checked  required  > Male </label><br>
+          <label><input type="radio" name="sex" value="female" required  > Female </label></br>
+    </tr>
+ 
+    <tr>
+      <td>Address:</td>
+      <td><textarea name="address" cols="50" rows="5" placeholder="Insert your address" required></textarea></td>
+    </tr>
+ 
+    <tr>
+      <td>Email:</td>
+      <td><input name="email" type="email" placeholder="Insert your email" pattern=".*@.*ukm.*" required>  Format: a123456@siswa.ukm.edu.my</td>
+    </tr>
+ 
+    <tr>
+      <td>Date of Birth:</td>
+      <td><input type="datetime-local" name="dob" placeholder="datetime-local" required>  Format: (days-month-years)(00:00am/pm)</td>
+    </tr>
+ 
+     <tr>
+      <td>Height:</td>
+      <td><input type="range" name="height" id="heightId" min = "100" max = "200" value = "150" oninput="outputId.value = heightId.value" required disabled><output id="outputId">150</output>cm
+      </td>
+    </tr>
+ 
+    <tr>
+      <td>Tel:</td>
+      <td><input type="tel" name="phone" placeholder="+60##-#######" pattern="^(?:\+60|0060)[0-9]{2}-[0-9]{7,8}" required> Format: +6012-3456789</td>
+    </tr>
+ 
+    <tr>
+      <td>My Favorite Color:</td>
+      <td><input type="color" name="color" value="#00FF00" required></td>
+    </tr>
+ 
+    <tr>
+      <td>FB/TW/IG:</td>
+      <td><input type="url " name="fbtwig" required>  Format: www.facebook.com</td>
+    </tr>
+ 
+    <tr>
+      <td>My Face Photo:</td>
+      <td><input type="file" name="photo" accept="image/*" required></td>
+    </tr>
+
+    <tr>
+      <td>My University:</td>
+      <td>
+        <select name="university" required>
+        <option value="">Select</option>
+        <option value="UPM">Universiti Putra Malaysia</option>
+        <option value="UKM" selected>Universiti Kebangsaan Malaysia </option>
+        <option value="UMP">Universiti Malaya</option>
+        <option value="UTM">Universiti Sains Malaysia</option>
+        <option value="USM">Universiti Teknologi Malaysia</option>
+        </select>
+      </td>
+    </tr>
+    
+    <!-- complete the rest of form here -->
+
+  </table>
+<hr>
+<input type="hidden" name="matricnum" value="A179830">
+<input type="submit" name="biodata_form" value="Submit My Biodata">
+<input type="reset" value="Reset">
+</form>
+ 
+</body>
+</html>
